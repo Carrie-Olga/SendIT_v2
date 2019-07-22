@@ -235,10 +235,20 @@ p {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: feedbackItem__name;
+  margin-top: -5px;
 }
 
 .feedbackItem__name p {
   font-size: .625rem;
+  line-height: 1.2rem;
+}
+
+.feedbackItem__name h2 {
+  font-weight: 400;
+}
+
+.feedbackItem__name h3 {
+  font-weight: 400;
 }
 
 .feedback__arrow1 {
@@ -270,5 +280,65 @@ p {
 .feedback-grid {
   -ms-grid-columns: 1fr 10fr 1fr;
       grid-template-columns: 1fr 10fr 1fr;
+}
+
+.plus {
+  background-color: #f7f7f7;
+}
+
+.plus h1 {
+  margin-bottom: 1rem;
+}
+
+.plusItems {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0.6rem;
+  -ms-grid-columns: (minmax(86px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(86px, 1fr));
+}
+
+.plusItems p {
+  font-size: .75rem;
+}
+
+.plusItem {
+  text-align: center;
+}
+
+.plusItem__img {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: #fff;
+  margin-bottom: 0.75rem;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.plusItem__img-bg1 {
+  background-image: url(img/plus1.png);
+  background-size: 70%;
+}
+
+.plusItem__img-bg2 {
+  background-image: url(img/plus2.png);
+}
+
+.plusItem__img-bg3 {
+  background-image: url(img/plus3.png);
+}
+
+.plusItem__img-bg4 {
+  background-image: url(img/plus4.png);
+}
+
+.plusItem__img-bg5 {
+  background-image: url(img/plus5.png);
+}
+
+.plusItem__img-bg6 {
+  background-image: url(img/plus6.png);
 }
 /*# sourceMappingURL=style.css.map */
