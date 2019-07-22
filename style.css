@@ -5,7 +5,7 @@
 
 body {
   color: #000;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
@@ -31,7 +31,7 @@ a {
 }
 
 p {
-  font-size: 0.875rem;
+  font-size: .875rem;
   font-weight: 400;
 }
 
@@ -41,6 +41,7 @@ p {
   background-color: #008dcd;
   border-radius: 40px;
 }
+
 .button a {
   display: block;
   color: #fff;
@@ -49,9 +50,12 @@ p {
   text-transform: uppercase;
   padding: 1rem;
 }
+
 .button:hover {
-  box-shadow: 0px 5px 10px #008dcd;
+  -webkit-box-shadow: 0px 5px 10px #008dcd;
+          box-shadow: 0px 5px 10px #008dcd;
 }
+
 .button-yellow {
   background-color: #fc0;
   color: #363636;
@@ -62,20 +66,43 @@ p {
   height: 50px;
   background-color: #008dcd;
   border-radius: 40px;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   color: #fff;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid #fff;
 }
 
+::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 1rem;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+  font-size: 1rem;
+}
+
+::-ms-input-placeholder {
+  color: #fff;
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 1rem;
+}
+
 .container {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 auto;
   padding: 1.5rem 1.25rem;
   width: 320px;
 }
 
 .grid {
+  display: -ms-grid;
   display: grid;
 }
 
@@ -91,10 +118,16 @@ p {
   background-size: cover;
   height: 265px;
 }
+
 .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .header__menuimg {
   height: 30px;
   width: 40px;
@@ -111,13 +144,16 @@ p {
 .we {
   background-color: #f7f7f7;
 }
+
 .we img {
   width: 100%;
   margin-bottom: 1.2rem;
 }
+
 .we button {
   margin-top: 1.2rem;
 }
+
 .we h3 {
   margin-bottom: 0.8rem;
 }
@@ -126,9 +162,11 @@ p {
   width: 100%;
   margin-bottom: 1rem;
 }
+
 .step h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
+
 .step p {
   margin-bottom: 1.2rem;
 }
@@ -136,6 +174,7 @@ p {
 .send {
   background-color: #f7f7f7;
 }
+
 .send h3 {
   margin-bottom: 1rem;
 }
@@ -143,22 +182,93 @@ p {
 .callback {
   background-color: #008dcd;
 }
+
 .callback h1 {
   color: #fff;
 }
+
 .callback p {
   color: #fff;
 }
+
 .callback .input {
-  margin-bottom: 0.5rem;
-  margin-top: 0.8rem;
-}
-.callback .button {
-  margin-bottom: 0.5rem;
-}
-.callback label {
-  color: #fff;
-  font-size: 0.625rem;
+  margin-bottom: .5rem;
+  margin-top: .8rem;
 }
 
+.callback .button {
+  margin-bottom: .5rem;
+}
+
+.callback label {
+  color: #fff;
+  font-size: .625rem;
+}
+
+.feedback h1 {
+  margin-bottom: 1rem;
+}
+
+.feedbackItem {
+      grid-template-areas: "feedbackItem__img feedbackItem__name" "feedbackItem__text feedbackItem__text";
+  grid-gap: .75rem;
+  grid-column-gap: 0;
+}
+
+.feedbackItem__img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: feedbackItem__img;
+  width: 100px;
+  height: 100px;
+}
+
+.feedbackItem__text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: feedbackItem__text;
+  font-size: .75rem;
+}
+
+.feedbackItem__name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: feedbackItem__name;
+}
+
+.feedbackItem__name p {
+  font-size: .625rem;
+}
+
+.feedback__arrow1 {
+  border-bottom: 2px solid #c4c4c4;
+  border-left: 2px solid #c4c4c4;
+  width: 17px;
+  height: 17px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.feedback__arrow2 {
+  border-top: 2px solid #c4c4c4;
+  border-right: 2px solid #c4c4c4;
+  width: 17px;
+  height: 17px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.feedback-grid {
+  -ms-grid-columns: 1fr 10fr 1fr;
+      grid-template-columns: 1fr 10fr 1fr;
+}
 /*# sourceMappingURL=style.css.map */

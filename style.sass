@@ -63,10 +63,14 @@ p
   height: 50px
   background-color: $background-color-blueish
   border-radius: 40px
-  padding: 1rem
+  padding: 1rem 1.5rem
   color: $font-color-bluebutton
   box-sizing: border-box
   border: 1px solid $font-color-bluebutton
+
+::placeholder
+  color: $font-color-bluebutton
+  font-size: 1rem
 
 .container
   box-sizing: border-box
@@ -139,3 +143,49 @@ p
   & label
     color: $font-color-bluebutton
     font-size: .625rem
+
+.feedback
+
+  & h1
+    margin-bottom: 1rem
+
+  &Item
+    grid-template-areas: "feedbackItem__img feedbackItem__name" "feedbackItem__text feedbackItem__text"
+    grid-gap: .75rem
+    grid-column-gap: 0
+
+    &__img
+      grid-area: feedbackItem__img
+      width: 100px
+      height: 100px
+
+    &__text
+      grid-area: feedbackItem__text
+      font-size: .75rem
+
+    &__name
+      grid-area: feedbackItem__name
+
+      & p
+        font-size: .625rem
+
+  &__arrow1
+    border-bottom: 2px solid #c4c4c4
+    border-left: 2px solid #c4c4c4
+    width: 17px
+    height: 17px
+    transform: rotate(45deg)
+    display: grid
+    align-self: center
+
+  &__arrow2
+    border-top: 2px solid #c4c4c4
+    border-right: 2px solid #c4c4c4
+    width: 17px
+    height: 17px
+    transform: rotate(45deg)
+    display: grid
+    align-self: center
+
+  &-grid
+    grid-template-columns: 1fr 10fr 1fr
