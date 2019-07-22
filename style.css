@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.button {
+  width: 280px;
+  height: 50px;
+  background-color: #008dcd;
+  border-radius: 40px;
+}
+.button a {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+.button:hover {
+  box-shadow: 0px 5px 10px #008dcd;
+}
+.button-yellow {
+  background-color: #fc0;
+  color: #363636;
+}
+
+.input {
+  width: 280px;
+  height: 50px;
+  background-color: #008dcd;
+  border-radius: 40px;
+  padding: 1rem;
+  color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+  width: 320px;
+}
+
+.grid {
+  display: grid;
+}
+
+.logo {
+  height: 30px;
+  width: 100px;
+}
+
+.header {
+  background-image: url("img/main.png");
+  background-position-x: -360px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 265px;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+}
+.header__menuimg {
+  height: 30px;
+  width: 40px;
+}
+
+.info .button {
+  margin-top: 1.5rem;
+}
+
+.info h1 {
+  margin-bottom: 1.25rem;
+}
+
+.we {
+  background-color: #f7f7f7;
+}
+.we img {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+.we button {
+  margin-top: 1.2rem;
+}
+.we h3 {
+  margin-bottom: 0.8rem;
+}
+
+.step img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.step h2 {
+  margin-bottom: 0.5rem;
+}
+.step p {
+  margin-bottom: 1.2rem;
+}
+
+.send {
+  background-color: #f7f7f7;
+}
+.send h3 {
+  margin-bottom: 1rem;
+}
+
+.callback {
+  background-color: #008dcd;
+}
+.callback h1 {
+  color: #fff;
+}
+.callback p {
+  color: #fff;
+}
+.callback .input {
+  margin-bottom: 0.5rem;
+  margin-top: 0.8rem;
+}
+.callback .button {
+  margin-bottom: 0.5rem;
+}
+.callback label {
+  color: #fff;
+  font-size: 0.625rem;
+}
+
+/*# sourceMappingURL=style.css.map */
