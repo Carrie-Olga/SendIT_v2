@@ -36,7 +36,7 @@ p {
 }
 
 .button {
-  width: 280px;
+  width: 100%;
   height: 50px;
   background-color: #008dcd;
   border-radius: 40px;
@@ -58,6 +58,9 @@ p {
 
 .button-yellow {
   background-color: #fc0;
+}
+
+.button-yellow a {
   color: #363636;
 }
 
@@ -91,6 +94,28 @@ p {
 ::placeholder {
   color: #fff;
   font-size: 1rem;
+}
+
+.arrowLeft {
+  border-bottom: 2px solid #c4c4c4;
+  border-left: 2px solid #c4c4c4;
+  width: 17px;
+  height: 17px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: -ms-grid;
+  display: grid;
+}
+
+.arrowRight {
+  border-top: 2px solid #c4c4c4;
+  border-right: 2px solid #c4c4c4;
+  width: 17px;
+  height: 17px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: -ms-grid;
+  display: grid;
 }
 
 .container {
@@ -251,29 +276,9 @@ p {
   font-weight: 400;
 }
 
-.feedback__arrow1 {
-  border-bottom: 2px solid #c4c4c4;
-  border-left: 2px solid #c4c4c4;
-  width: 17px;
-  height: 17px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.feedback__arrow2 {
-  border-top: 2px solid #c4c4c4;
-  border-right: 2px solid #c4c4c4;
-  width: 17px;
-  height: 17px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row-align: center;
+.feedback__arrow {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
 }
 
@@ -340,5 +345,53 @@ p {
 
 .plusItem__img-bg6 {
   background-image: url(img/plus6.png);
+}
+
+.guaranteeItems {
+  grid-gap: .75rem;
+  grid-column-gap: 0;
+  -ms-grid-columns: 1fr 10fr 1fr;
+      grid-template-columns: 1fr 10fr 1fr;
+}
+
+.guaranteeItems h3 {
+  font-size: 1rem;
+}
+
+.guaranteeItems p {
+  font-size: .75rem;
+}
+
+.guaranteeItems__arrow {
+  -ms-flex-item-align: self-start;
+      -ms-grid-row-align: self-start;
+      align-self: self-start;
+  margin-top: 2.2rem;
+}
+
+.guaranteeItem__img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  float: left;
+  margin-right: 1rem;
+  background-image: url(img/guarant.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+.guaranteeItem__top {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.guaranteeItem button {
+  margin-top: 1rem;
+}
+
+.questions {
+  background-color: #d2ecf7;
 }
 /*# sourceMappingURL=style.css.map */

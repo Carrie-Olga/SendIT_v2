@@ -41,7 +41,7 @@ p
   font-weight: 400
 
 .button
-  width: 280px
+  width: 100%
   height: 50px
   background-color: $background-color-blueish
   border-radius: 40px
@@ -56,7 +56,8 @@ p
     box-shadow: 0px 5px 10px $background-color-blueish
   &-yellow
     background-color: $background-color-yellowish
-    color: $font-color-foryellowbutton
+    & a
+      color: $font-color-foryellowbutton
 
 .input
   width: 280px
@@ -71,6 +72,22 @@ p
 ::placeholder
   color: $font-color-bluebutton
   font-size: 1rem
+
+.arrowLeft
+  border-bottom: 2px solid #c4c4c4
+  border-left: 2px solid #c4c4c4
+  width: 17px
+  height: 17px
+  transform: rotate(45deg)
+  display: grid
+
+.arrowRight
+  border-top: 2px solid #c4c4c4
+  border-right: 2px solid #c4c4c4
+  width: 17px
+  height: 17px
+  transform: rotate(45deg)
+  display: grid
 
 .container
   box-sizing: border-box
@@ -175,22 +192,7 @@ p
       & h3
         font-weight: 400
 
-  &__arrow1
-    border-bottom: 2px solid #c4c4c4
-    border-left: 2px solid #c4c4c4
-    width: 17px
-    height: 17px
-    transform: rotate(45deg)
-    display: grid
-    align-self: center
-
-  &__arrow2
-    border-top: 2px solid #c4c4c4
-    border-right: 2px solid #c4c4c4
-    width: 17px
-    height: 17px
-    transform: rotate(45deg)
-    display: grid
+  &__arrow
     align-self: center
 
   &-grid
@@ -235,4 +237,43 @@ p
         background-image: url(img/plus5.png)
       &-bg6
         background-image: url(img/plus6.png)
-      
+
+.guarantee
+  &Items
+    grid-gap: .75rem
+    grid-column-gap: 0
+    grid-template-columns: 1fr 10fr 1fr
+
+    & h3
+      font-size: 1rem
+
+    & p
+      font-size: .75rem
+
+    &__arrow
+      align-self: self-start
+      margin-top: 2.2rem
+
+  &Item 
+    &__img
+      width: 62px
+      height: 62px
+      border-radius: 50%
+      background-color: $background-color-lightish
+      float: left
+      margin-right: 1rem
+      background-image: url(img/guarant.png)
+      background-repeat: no-repeat
+      background-size: 50%
+      background-position: center
+    
+    &__top
+      margin-top: 1rem
+      margin-bottom: 1rem
+
+    & button
+      margin-top: 1rem
+
+.questions
+  background-color: $background-color-lightblueish
+  
