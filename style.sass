@@ -414,11 +414,11 @@ li
     display: flex
     justify-content: space-between
     padding: 18px 20px
-    width: 320px
+    width: 280px
     margin: 0 auto
 
     & p
-      font-size: .625rem
+      font-size: .6rem
 
 @media screen and (min-width: 321px) and (max-width: 1440px)
 
@@ -500,9 +500,16 @@ li
   .callback
     & .container
       grid-template-columns: repeat(2, 1fr)
+    
+    &__text
+      margin-top: 15px
 
-    &__text h1
-      margin-bottom: 10px
+      & h1
+        margin-bottom: 10px
+
+  .plusItem__img
+    width: 100px
+    height: 100px 
 
   .hidden
     display: grid
@@ -531,6 +538,9 @@ li
       &__top
         grid-template-rows: repeat(2, 1fr)
 
+    & .button
+      align-self: end
+
   .questions
     &Item
       height: 50px
@@ -548,6 +558,70 @@ li
   .doubts  
     & .container
       width: 700px
+      grid-template-areas: "dh2 df"
+      & .doubts__h2
+        grid-area: dh2
+        font-size: 1.25rem
+      & .doubts__form
+        grid-area: df  
+    
+    & form
+      display: grid
+      grid-template-areas: "inp btn" "check check"
+
+    & .input
+      grid-area: inp
+      width: 220px
+    & .button
+      grid-area: btn
+      width: 220px
+    & .doubts__form_ch
+      grid-area: check
+
+  .footer
+    &__menuimg
+      display: none
+    
+    & .menu__long
+      width: 100%
+
+      & ul
+        display: flex
+        justify-content: space-between
+        
+        & li a
+          color: #000
+          line-height: 30px
+          font-size: 0.825rem
+
+    & .copy
+      width: 700px
+      font-size: .75rem
+
+      & span
+        margin-right: 24px
+
+    &__social
+      display: flex
+      width: 70px
+      justify-content: space-between
+
+    &__img
+      width: 13px
+      height: 13px
+      border-radius: 50%
+      background-size: cover
+
+      &1
+        background-image: url('img/fb.png') 
+      &2
+        background-image: url('img/inst.png') 
+      &3
+        background-image: url('img/vk.png') 
+
+
+
+
 
 
     
