@@ -35,10 +35,16 @@ h3
   line-height: 1.5rem
 a
   text-decoration: none
+  color: $font-color-bluebutton
+  display: block
+  margin: auto 0
 
 p
   font-size: .875rem
   font-weight: 400
+
+li 
+  list-style-type: none
 
 .button
   width: 100%
@@ -60,7 +66,7 @@ p
       color: $font-color-foryellowbutton
 
 .input
-  width: 280px
+  width: 100%
   height: 50px
   background-color: $background-color-blueish
   border-radius: 40px
@@ -89,6 +95,14 @@ p
   transform: rotate(45deg)
   display: grid
 
+.arrowDown
+  border-bottom: 2px solid #008dcd
+  border-right: 2px solid #008dcd
+  width: 13px
+  height: 13px
+  transform: rotate(45deg)
+  display: grid
+
 .container
   box-sizing: border-box
   margin: 0 auto
@@ -101,6 +115,7 @@ p
 .logo
   height: 30px
   width: 100px
+  margin-right: 1.25rem
 
 .header
   background-image: url('img/main.png')
@@ -115,6 +130,20 @@ p
     &img
       height: 30px
       width: 40px
+    & ul
+      display: flex
+      justify-content: space-between
+
+  & .menu__long
+    display: none
+    width: 100%
+    line-height: 30px
+
+    & a
+      font-size: .875rem
+
+  &__text
+    display: none
 
 .info .button
   margin-top: 1.5rem
@@ -155,6 +184,8 @@ p
   & .input
     margin-bottom: .5rem
     margin-top: .8rem
+    box-sizing: border-box
+
   & .button
     margin-bottom: .5rem
   & label
@@ -276,4 +307,146 @@ p
 
 .questions
   background-color: $background-color-lightblueish
+  
+  & h1
+    margin-bottom: 20px
+  
+  & p
+    font-size: 0.75rem
+    vertical-align: middle
+    width: 195px
+    margin-right: 10px
+    
+  &Item
+    height: 80px
+    box-sizing: border-box
+    background-color: $font-color-bluebutton
+    width: 100%
+    padding: 16px 24px
+    border-radius: 32px
+    display: flex
+    margin-bottom: 10px
+
+    &__arrow
+      align-self: center
+      
+.brands
+
+  &-grid
+    grid-template-columns: 1fr 10fr 1fr
+    margin-top: 15px
+    margin-bottom: 15px
+
+  &Items
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(62px, 1fr))
+    grid-gap: 19px
+    padding: 3px
+
+.brandItem
+  width: 66px
+  height: 42px
+  background-size: contain
+  background-repeat: no-repeat
+
+  &1
+    background-image: url('img/brand1.png')
+  &2
+    background-image: url('img/brand2.png')
+  &3
+    background-image: url('img/brand3.png')
+  &4
+    background-image: url('img/brand4.png')
+  &5
+    background-image: url('img/brand5.png')
+  &6
+    background-image: url('img/brand6.png')
+
+.doubts
+  background-color: $background-color-greyish
+
+  & .container
+    width: 290px
+    padding: 1.5rem .95rem
+    border-bottom: 2px solid #c4c4c4
+
+  & h2
+    text-transform: uppercase
+    font-weight: 600
+
+  &__form .input
+    background-color: $background-color-greyish
+    border: 1px solid $font-color-foryellowbutton
+    margin-top: 15px
+    margin-bottom: 10px
+
+    &::placeholder
+      color: $font-color-foryellowbutton
+
+  & label
+    color: $font-color-checkbox
+    font-size: .625rem
+    margin-bottom: 10px
+
+.footer
+  background-color: $background-color-greyish
+
+  & .container
+    border-bottom: 2px solid #c4c4c4
+
+  &__menu
+    display: flex
+    justify-content: space-between
+
+    &img
+      height: 30px
+      width: 40px
+  
+  & .copy
+    display: flex
+    justify-content: space-between
+    padding: 18px 20px
+    width: 320px
+    margin: 0 auto
+
+    & p
+      font-size: .625rem
+
+@media screen and (min-width: 321px) and (max-width: 1440px)
+
+  .header
+    background-position-x: -260px
+    height: 415px
+
+    &__menuimg
+      display: none
+    
+    & .menu__long
+      display: block
+
+    &__text
+      display: block
+      width: 400px
+      margin-top: 60px
+
+      & h1
+        font-size: 2.75rem
+        color: $font-color-bluebutton 
+        line-height: 50px
+
+      & h3
+        font-size: 1.75rem
+        color: $font-color-bluebutton 
+        line-height: 90px
+        font-weight: 700
+
+      & .button
+        width: 280px
+
+
+  .container
+    width: 700px
+
+  .info
+    display: none
   
