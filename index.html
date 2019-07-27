@@ -48,8 +48,8 @@
     <div class="we__img">
       <img src="img/main-img.png" alt="we_img">
     </div>
+    <div class="we__h3"><h3>Мы – агрегатор служб доставки</h3></div>
     <div class="we__text">
-      <h3>Мы – агрегатор служб доставки</h3>
       <p>С нами удобно вам, вашим клиентам и курьерским службам. Для вас наши услуги бесплатны, так как мы получаем бонусы от служб доставок за предоставленный объем заказов, а вы получаете надежный сервис в подарок!</p>
     </div>
     <div class="we__btn">
@@ -96,7 +96,7 @@
   </div>
 </section>
 <section class="callback">
-  <div class="container">
+  <div class="container grid">
     <div class="callback__text">
       <h1>хотите мы вам перезвоним?</h1>
       <p>Закажите звонок, и менеджер вам всё расскажет и объяснит</p>
@@ -131,6 +131,17 @@
         </div>
         <p class="feedbackItem__text">Отличный и качественный сервис. Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно удивлены, что помимо удобного сайта, компания предоставляет доступ в личный кабинет, где реализованы многие наши потребности (ведение адресной базы, выбор и вызов курьера в пару кликов).</p>
       </div>
+      <div class="feedbackItem grid hidden">
+          <img src="img/feedback-img2.png" alt="face" class="feedbackItem__img">
+          <div class="feedbackItem__name">
+            <h2>Елена</h2>
+            <h3>Global Logic</h3>
+            <p>Посылка: товары</p>
+            <p>Откуда: Москва</p>
+            <p>Куда: Калининград</p>
+          </div>
+          <p class="feedbackItem__text">Мне нравится работать с SendIt, потому что это удобно: моментальный расчет стоимости доставки, удобный сайт, выборка среди основных надёжных логистических компаний и самый значимый фактор – всё это можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное спасибо менеджеру за отзывчивость.</p>
+        </div>
       <div class="feedback__arrow arrowRight"></div>
     </div>
   </div>
@@ -172,6 +183,26 @@
     <div class="guaranteeItems grid">
         <div class="arrowLeft guaranteeItems__arrow"></div>
         <div class="guaranteeItem grid">
+            <div class="guaranteeItem__top">
+                <div class="guaranteeItem__img"></div>
+                <h3>Страховка отправлений</h3>
+            </div>
+            <p>Контроль работы курьеров в онлайн режиме. Страхование по запросу клиента Каждый куръер находится под пристальным вниманием менеджеров SendIt</p>
+            <button type="button" name="button" class="button">
+                <a href="#">подробнее</a>
+              </button>
+        </div>
+        <div class="guaranteeItem grid hidden">
+            <div class="guaranteeItem__top">
+                <div class="guaranteeItem__img"></div>
+                <h3>Страховка отправлений</h3>
+            </div>
+            <p>Контроль работы курьеров в онлайн режиме. Страхование по запросу клиента Каждый куръер находится под пристальным вниманием менеджеров SendIt</p>
+            <button type="button" name="button" class="button">
+                <a href="#">подробнее</a>
+              </button>
+        </div>
+        <div class="guaranteeItem grid hidden">
             <div class="guaranteeItem__top">
                 <div class="guaranteeItem__img"></div>
                 <h3>Страховка отправлений</h3>
@@ -227,6 +258,8 @@
           <div class="brandItem brandItem4"></div>
           <div class="brandItem brandItem5"></div>
           <div class="brandItem brandItem6"></div>
+          <div class="brandItem brandItem7 hidden"></div>
+          <div class="brandItem brandItem8 hidden"></div>
         </div>
         <div class="feedback__arrow arrowRight"></div>
     </div>
@@ -234,16 +267,16 @@
 </div>
 <section class="doubts">
     <div class="container">
-      <h2>ОСТАЛИСЬ ВОПРОСЫ?</h2>
+      <h2 class="doubtsH2">ОСТАЛИСЬ ВОПРОСЫ?</h2>
       <div class="doubts__form">
-        <form action="put" class="form">
+        <form action="put" class="form grid">
           <label for="tel2"></label>
           <input type="tel" placeholder="Ваш телефон" id="tel2" class="input">
           <button type="button" name="button" class="button">
             <a href="#">заказать звонок</a>
           </button>
           <label for="checkbox2">
-          <input type="checkbox" id="checkbox2">
+          <input type="checkbox" id="checkbox2" class="doubts__form_ch">
           Я согласен на обработку персональных данных</label>
         </form>
       </div>

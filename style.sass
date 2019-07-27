@@ -229,6 +229,9 @@ li
   &-grid
     grid-template-columns: 1fr 10fr 1fr
 
+.hidden
+  display: none
+
 .plus
   background-color: $background-color-lightish
 
@@ -348,6 +351,7 @@ li
   height: 42px
   background-size: contain
   background-repeat: no-repeat
+  background-position: center
 
   &1
     background-image: url('img/brand1.png')
@@ -361,6 +365,10 @@ li
     background-image: url('img/brand5.png')
   &6
     background-image: url('img/brand6.png')
+  &7
+    background-image: url('img/brand7.png')
+  &8
+    background-image: url('img/brand8.png')
 
 .doubts
   background-color: $background-color-greyish
@@ -443,10 +451,104 @@ li
       & .button
         width: 280px
 
-
   .container
     width: 700px
 
   .info
     display: none
+
+  .we
+    &__text
+      width: 280px
+      grid-area: wep
+      margin-top: 20px
+    
+    & .container
+      grid-template-areas: "weh1 weh1 weh1 weh1 weh1" "wep wep weimg weimg weimg" "webtn webtn weimg weimg weimg"
+
+    &__img
+      grid-area: weimg
+    &__h3
+      grid-area: weh1
+      
+      & h3
+        font-size: 2.25rem
+    &__btn
+      grid-area: webtn
+
+  .steps
+    & .container 
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+      grid-gap: 80px
   
+  .send
+    & .container
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 20px
+      & h3
+        font-size: 1.75rem
+        margin-bottom: 0
+        line-height: 35px
+    
+    &__text
+      width: 350px
+
+    &__btn
+      display: grid
+      align-self: center
+
+  .callback
+    & .container
+      grid-template-columns: repeat(2, 1fr)
+
+    &__text h1
+      margin-bottom: 10px
+
+  .hidden
+    display: grid
+
+  .feedback
+    &-grid
+      grid-template-columns: 1fr 10fr 10fr 1fr
+      grid-gap: 20px
+
+  .guarantee
+    &Items
+      grid-template-columns: 1fr 1fr 1fr
+      grid-gap: 20px
+
+      & .arrowLeft 
+        display: none
+      & .arrowRight
+        display: none
+    
+    &Item
+      &__img
+        float: none
+        width: 100px
+        height: 100px
+        margin-bottom: 17px
+      &__top
+        grid-template-rows: repeat(2, 1fr)
+
+  .questions
+    &Item
+      height: 50px
+      & p
+        width: 100%
+        font-size: 1rem
+
+  .brands
+    &Items
+      grid-gap: 10px
+
+    &-grid
+      grid-template-columns: 1fr 18fr 1fr
+
+  .doubts  
+    & .container
+      width: 700px
+
+
+    
+
